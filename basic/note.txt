@@ -1,0 +1,65 @@
+# Numeric types
+int: 
+Represents integers. Examples include 42, -7, and 0
+age = 30
+
+float: 
+Represents floating-point numbers (decimals). Examples include 3.14, -0.001, and 2.0
+pi = 3.14
+
+complex: 
+Represents complex numbers with real and imaginary parts. Example: 3 + 4j.
+complex_number = 1 + 2j
+
+# Sequence types
+str: 
+Represents strings, which are sequences of characters. Example: "Hello, world!".
+name = "Alice"
+
+list: 
+Represents ordered, mutable collections of items. Example: [1, 2, 3, 4].
+numbers = [1, 2, 3, 4]
+
+tuple: 
+Represents ordered, immutable collections of items. Example: (1, 2, 3).
+coordinates = (10.0, 20.0)
+
+range: 
+Represents a sequence of numbers, commonly used in loops. Example: range(5) generates numbers 0 through 4.
+range_numbers = range(5)
+
+# Mapping type
+dict: 
+Represents a collection of key-value pairs. Example: {"name": "Alice", "age": 25}.
+person = {"name": "Alice", "age": 25}
+
+# Set types
+set: 
+Represents an unordered collection of unique items. Example: {1, 2, 3, 4}.
+unique_numbers = {1, 2, 3, 4}
+
+frozenset: 
+Represents an immutable set. Example: frozenset([1, 2, 3, 4]).
+frozen_unique_numbers = frozenset([1, 2, 3, 4])
+
+# Boolean type
+bool: 
+Represents Boolean values, which can be either True or False.
+is_valid = True
+
+# Binary types
+bytes: Represents immutable sequences of bytes. Example: b'hello'.
+data = b"hello"
+
+bytearray: 
+Represents mutable sequences of bytes. Example: bytearray(b'hello').
+mutable_data = bytearray(b"hello")
+
+memoryview: 
+Provides a view of another binary sequence without copying it. Example: memoryview(b'hello').
+mem_view = memoryview(b"hello")
+
+# None type
+NoneType: 
+Represents the absence of a value or a null value. The only value of this type is None.
+result = None
