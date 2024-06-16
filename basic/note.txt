@@ -1,3 +1,5 @@
+#Data types
+
 # Numeric types
 int: 
 Represents integers. Examples include 42, -7, and 0

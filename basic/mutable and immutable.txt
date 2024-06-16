@@ -1,0 +1,57 @@
+###########
+Key Differences:
+Immutable types cannot be changed after creation. 
+Any operation that appears to modify an immutable object actually creates a new object with the modified value.
+Mutable types can be modified after creation. Operations directly modify the object without creating a new one.
+
+#################################
+Immutable Types:
+Immutable types are types whose values cannot be changed after they are created. 
+
+int: 
+Integer values are immutable.
+x = 5
+x += 1  # a new integer object with value 6
+
+float: 
+Floating-point numbers are immutable.
+y = 3.14
+# Operations like y += 1.0 create a new float object
+
+tuple: 
+Tuples are immutable sequences.
+tup = (1, 2, 3)
+# cannot change elements in a tuple; we'd create a new tuple instead
+
+str: 
+Strings are immutable sequences of characters.
+s = "hello"
+# String methods like s.upper() return new string objects with uppercase
+
+Mutable Types:
+Mutable types are types whose values can be changed after they are created.
+
+list: 
+Lists are mutable sequences.
+lst = [1, 2, 3]
+lst.append(4)  # Modifies the existing list and adds 4 to the list
+
+dict: 
+Dictionaries are mutable mappings of keys to values.
+d = {"name": "Alice", "age": 30}
+d["age"] = 31  # Modifies the value associated with the key "age"
+
+set: 
+Sets are mutable collections of unique elements.
+s = {1, 2, 3}
+s.add(4)  # Modifies the existing set
+
+
+
+
+
+
+
+
+
+
