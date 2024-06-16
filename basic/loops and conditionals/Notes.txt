@@ -1,0 +1,7 @@
+in order to start new block within the conditions in python 
+we use ':'
+for example:
+if b == 30 :
+   print ("b is a number")
+   print ("we accept b")
+   

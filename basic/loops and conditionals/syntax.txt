@@ -1,0 +1,32 @@
+#For loop
+
+for item in iterable:
+    # Body of the loop
+    # Indented block of code to be executed for each iteration
+
+example:
+insects = ["mosquito", "housefly", "bee"]
+for insect in insects:
+   print(insect)
+
+#output:
+mosquito
+housefly
+bee
+
+#enumerate 
+iterating with index
+
+for index, item in enumerate(iterable):
+   print(index, item)
+
+example:
+fruits = ["apple", "banana", "cherry"]
+
+for index, fruit in enumerate(fruits):
+    print(f"Index {index}: {fruit}")
+    
+output:
+Index 0: apple
+Index 1: banana
+Index 2: cherry
