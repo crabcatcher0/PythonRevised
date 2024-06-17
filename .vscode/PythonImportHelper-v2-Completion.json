@@ -632,6 +632,114 @@
     {
         "label": "Human",
         "kind": 6,
+        "importPath": "OOP.decorators",
+        "description": "OOP.decorators",
+        "peekOfCode": "class Human:\n    population = 0     #static variables : common for all objecrs of that class\n    def __init__(self, name, age):  \n        self.age = age\n        self.name = name\n        #when a new human comes, increase the population\n        Human.population += 1\n    @staticmethod #this is called a decorator\n        #used to modify behaviour of a function \n    def fun():",
+        "detail": "OOP.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "ram",
+        "kind": 5,
+        "importPath": "OOP.decorators",
+        "description": "OOP.decorators",
+        "peekOfCode": "ram = Human(\"Ram\", 23)\ndata = ram.fun()\nprint(data)",
+        "detail": "OOP.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "OOP.decorators",
+        "description": "OOP.decorators",
+        "peekOfCode": "data = ram.fun()\nprint(data)",
+        "detail": "OOP.decorators",
+        "documentation": {}
+    },
+    {
+        "label": "Human",
+        "kind": 6,
+        "importPath": "OOP.ex",
+        "description": "OOP.ex",
+        "peekOfCode": "class Human:\n    population = 0     #static variables : common for all objecrs of that class\n    def __init__(self, name, age):  \n        self.age = age\n        self.name = name\n        #when a new human comes, increase the population\n        Human.population += 1\nram = Human(\"Ram\", 23)\nshyam = Human(\"Shyam\", 12)\nprint(ram.population)",
+        "detail": "OOP.ex",
+        "documentation": {}
+    },
+    {
+        "label": "ram",
+        "kind": 5,
+        "importPath": "OOP.ex",
+        "description": "OOP.ex",
+        "peekOfCode": "ram = Human(\"Ram\", 23)\nshyam = Human(\"Shyam\", 12)\nprint(ram.population)",
+        "detail": "OOP.ex",
+        "documentation": {}
+    },
+    {
+        "label": "shyam",
+        "kind": 5,
+        "importPath": "OOP.ex",
+        "description": "OOP.ex",
+        "peekOfCode": "shyam = Human(\"Shyam\", 12)\nprint(ram.population)",
+        "detail": "OOP.ex",
+        "documentation": {}
+    },
+    {
+        "label": "cc",
+        "kind": 2,
+        "importPath": "OOP.ex1",
+        "description": "OOP.ex1",
+        "peekOfCode": "def cc():\n    num = 40\n    print(\"number is: \", num)\nprint(cc())",
+        "detail": "OOP.ex1",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "OOP.ex1",
+        "description": "OOP.ex1",
+        "peekOfCode": "num = 10\ndef cc():\n    num = 40\n    print(\"number is: \", num)\nprint(cc())",
+        "detail": "OOP.ex1",
+        "documentation": {}
+    },
+    {
+        "label": "Parent",
+        "kind": 6,
+        "importPath": "OOP.inherit",
+        "description": "OOP.inherit",
+        "peekOfCode": "class Parent:\n    f = 80\n    def __init__(self, value):\n        self.value = value\nclass Child(Parent):\n    def __init__(self, value, name):\n        super().__init__(value)\n        self.name = name\nobj = Child(67, \"RAM\")\ndata = obj.f, obj.value, obj.name",
+        "detail": "OOP.inherit",
+        "documentation": {}
+    },
+    {
+        "label": "Child",
+        "kind": 6,
+        "importPath": "OOP.inherit",
+        "description": "OOP.inherit",
+        "peekOfCode": "class Child(Parent):\n    def __init__(self, value, name):\n        super().__init__(value)\n        self.name = name\nobj = Child(67, \"RAM\")\ndata = obj.f, obj.value, obj.name\nprint(data) #output: (80, 67, 'RAM')",
+        "detail": "OOP.inherit",
+        "documentation": {}
+    },
+    {
+        "label": "obj",
+        "kind": 5,
+        "importPath": "OOP.inherit",
+        "description": "OOP.inherit",
+        "peekOfCode": "obj = Child(67, \"RAM\")\ndata = obj.f, obj.value, obj.name\nprint(data) #output: (80, 67, 'RAM')",
+        "detail": "OOP.inherit",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "OOP.inherit",
+        "description": "OOP.inherit",
+        "peekOfCode": "data = obj.f, obj.value, obj.name\nprint(data) #output: (80, 67, 'RAM')",
+        "detail": "OOP.inherit",
+        "documentation": {}
+    },
+    {
+        "label": "Human",
+        "kind": 6,
         "importPath": "OOP.oop",
         "description": "OOP.oop",
         "peekOfCode": "class Human:\n    age = 0\n    name = \"Ram\"\nhuman_obj = Human() \nhuman2_obj = Human()\nhuman_obj.age = 21\nind = human2_obj.age\n# whenever we create an object, a constructor is called automatically\n# constructor is a function\nprint(human_obj.name,human2_obj.age) #output: Ram 0",
@@ -672,6 +780,51 @@
         "description": "OOP.oop",
         "peekOfCode": "ind = human2_obj.age\n# whenever we create an object, a constructor is called automatically\n# constructor is a function\nprint(human_obj.name,human2_obj.age) #output: Ram 0\nprint(human_obj.age) #output: 0\nprint(human_obj.name) #output: Ram\nprint (ind) #output: 21",
         "detail": "OOP.oop",
+        "documentation": {}
+    },
+    {
+        "label": "fun",
+        "kind": 2,
+        "importPath": "OOP.scoping",
+        "description": "OOP.scoping",
+        "peekOfCode": "def fun():\n    a = 10\n    print(a)\nprint(fun()) #output: 10\n#print(a) --cannot access from outside\nz = 20 #this is global \ndef fun1():\n    z = 60 #this is local to function fun1\n    z = z + 20\n    print(z)",
+        "detail": "OOP.scoping",
+        "documentation": {}
+    },
+    {
+        "label": "fun1",
+        "kind": 2,
+        "importPath": "OOP.scoping",
+        "description": "OOP.scoping",
+        "peekOfCode": "def fun1():\n    z = 60 #this is local to function fun1\n    z = z + 20\n    print(z)\nprint(fun1()) #output: 80\n#we can access but cannot change directly\nprint(z) #output: 20\nx = 50\ndef c():\n    x = 10 # this is local to c",
+        "detail": "OOP.scoping",
+        "documentation": {}
+    },
+    {
+        "label": "c",
+        "kind": 2,
+        "importPath": "OOP.scoping",
+        "description": "OOP.scoping",
+        "peekOfCode": "def c():\n    x = 10 # this is local to c\n    #this x = 10, this is enclosed to c\n    def d():\n        x = 40 #this is local to d\n        print(\"x in d() is: \", x)\n        print(\"locals for d are: \", locals())\n    print(\"x in c() is: \", x)\n    return d()\nprint(c()) ",
+        "detail": "OOP.scoping",
+        "documentation": {}
+    },
+    {
+        "label": "z",
+        "kind": 5,
+        "importPath": "OOP.scoping",
+        "description": "OOP.scoping",
+        "peekOfCode": "z = 20 #this is global \ndef fun1():\n    z = 60 #this is local to function fun1\n    z = z + 20\n    print(z)\nprint(fun1()) #output: 80\n#we can access but cannot change directly\nprint(z) #output: 20\nx = 50\ndef c():",
+        "detail": "OOP.scoping",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "OOP.scoping",
+        "description": "OOP.scoping",
+        "peekOfCode": "x = 50\ndef c():\n    x = 10 # this is local to c\n    #this x = 10, this is enclosed to c\n    def d():\n        x = 40 #this is local to d\n        print(\"x in d() is: \", x)\n        print(\"locals for d are: \", locals())\n    print(\"x in c() is: \", x)\n    return d()",
+        "detail": "OOP.scoping",
         "documentation": {}
     }
 ]
