@@ -30,3 +30,16 @@ output:
 Index 0: apple
 Index 1: banana
 Index 2: cherry
+
+####
+
+#While loops
+
+while condition:
+    # Code to execute while the condition is true
+example:
+count = 0  # Initialization
+
+while count < 5:  # Condition
+    print("The count is:", count)  # Loop body
+    count += 1  # Update

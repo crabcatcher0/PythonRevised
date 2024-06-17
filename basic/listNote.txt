@@ -1,0 +1,27 @@
+
+Key Characteristics of Lists:
+
+Ordered:
+Lists maintain the order of elements as they are defined.
+
+Mutable: 
+Unlike tuples, lists are mutable, meaning you can modify their contents (add, remove, or change elements).
+
+Heterogeneous: 
+Lists can contain elements of different data types (integers, floats, strings, other lists, etc.).
+
+Indexed: 
+Elements in a list can be accessed using indices, starting from 0.
+
+Dynamic: 
+Lists in Python are dynamic in size, meaning they can grow or shrink as needed.
+
+Use Cases for Lists:
+Data Storage: 
+Use lists to store collections of related items or data.
+
+Iterating: 
+Lists are ideal for iterating over elements using loops (for loop).
+
+Sorting and Searching: 
+Lists can be sorted and searched efficiently using built-in methods.

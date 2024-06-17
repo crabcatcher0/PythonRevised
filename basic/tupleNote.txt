@@ -1,0 +1,3 @@
+When to Use Tuples vs Lists:
+Use tuples when you have a collection of items that should not change, like days of the week or coordinates.
+Use lists when you need a collection that can be modified, like a list of tasks or user inputs.

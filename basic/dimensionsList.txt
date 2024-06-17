@@ -1,0 +1,56 @@
+One-Dimensional List
+A one-dimensional list is a linear sequence of elements.
+
+example:
+one_dim_list = [1, 2, 3, 4, 5]
+
+#Accessing elements
+print(one_dim_list[1]) #output: 2
+
+
+Two-Dimensional List
+A two-dimensional list (or a list of lists) is like a table with rows and columns.
+
+example:
+
+two_dim_list = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+#Accessing elements
+print(two_dim_list[0][0]) #output: 1
+print(two_dim_list[1][2]) #output: 6
+
+
+Three-Dimensional List
+A three-dimensional list can be thought of as a list of lists of lists.
+
+example:
+
+three_dim_list = [
+    [
+        [1, 2, 3],
+        [4, 5, 6]
+    ],
+    [
+        [7, 8, 9],
+        [10, 11, 12]
+    ]
+]
+
+#Accessing elements
+
+print(three_dim_list[0][0][0]) #output: 1 (element at first list, first sublist, first element)
+print(three_dim_list[1][1][2]) #output: 12 (element at second list, second sublist, third element)
+
+
+Creating Multi-Dimensional Lists
+Multi-dimensional lists can be created using nested list comprehensions.
+
+Example of a 2D list:
+
+rows, cols = 3, 3
+two_dim_list = [[0 for _ in range(cols)] for _ in range(rows)]
+print(two_dim_list)  # Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
