@@ -1,0 +1,72 @@
+class 
+
+Nameed group of properties and functions
+
+example:
+class Human():
+  contains age, name and income
+
+*** Abstractions, encapsulation, polymorphism and inheritence
+
+Abstraction:
+it is done at designing level 
+- with functions
+abstraction refers to the concept of hiding complex implementation details and showing only the necessary features of 
+an object or a function to the outside world. 
+
+Hide Complexity: 
+Abstraction hides the complex inner workings of a class or function from the user, providing a simplified interface.
+
+Focus on Essentials: 
+It focuses on essential features and behaviors while hiding unnecessary details that are not relevant to the user.
+
+Level of Abstraction:
+
+Class Level:
+Classes can abstract complex behaviors and properties of objects into simple methods and attributes.
+
+Function Level:
+Functions can abstract a sequence of operations into a single callable entity.
+
+Example:
+Consider a class Car that represents a car with properties like brand, model, and methods like start_engine() and drive():
+class Car:
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+    
+    def start_engine(self):
+        # Complex logic to start the engine
+        print(f"{self.brand} {self.model} engine started.")
+    
+    def drive(self):
+        # Complex logic to drive the car
+        print(f"{self.brand} {self.model} is now driving.")
+
+Abstraction Example: 
+The user of the Car class doesn't need to know the intricate details of how start_engine() or drive() methods work 
+internally. They only need to know how to use these methods.
+
+my_car = Car("Toyota", "Corolla")
+my_car.start_engine()  # Output: Toyota Corolla engine started.
+my_car.drive()         # Output: Toyota Corolla is now driving.
+
+#encapsulation:
+- with classes
+It is done in implementation level.
+bunduling of data into single object or entity.
+
+#polymorphism:
+
+poly- many
+morphism - ways
+act of representing single thing into multiple ways
+Overriding and overloading( but not in python)
+
+#inheritence:
+
+example:
+
+kids inherit properties of their parents
+
+

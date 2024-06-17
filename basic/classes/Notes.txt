@@ -1,0 +1,26 @@
+Syntax:
+
+class ClassName:
+    # Class variables (shared by all instances)
+    class_variable = value
+    
+    def __init__(self, parameters):
+        # Constructor (initialization method)
+        self.instance_variable = parameters
+    
+    def method_name(self, parameters):
+        # Method definition
+        # Code to execute
+        return value
+
+Class variables: 
+Variables shared by all instances of the class.
+
+Constructor (__init__): 
+Special method used to initialize objects (instances) of the class.
+
+Instance variables: 
+Variables unique to each instance (object) of the class.
+
+Methods: 
+Functions defined within the class to perform operations on its instances.

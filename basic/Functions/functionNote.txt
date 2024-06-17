@@ -1,0 +1,17 @@
+Syntax:
+
+def function_name(parameters):
+    # Function body
+    # Code to execute
+    return value  # Optional
+
+example:
+
+def call(name):
+    message = "hello " + name
+    return message
+
+greet = call("Ram")
+print(greet)
+
+#output: hello Ram

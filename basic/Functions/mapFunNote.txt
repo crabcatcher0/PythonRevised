@@ -1,0 +1,22 @@
+##
+Syntax:
+
+map(function, iterable)
+
+example:
+numbers = [1, 2, 3, 4, 5]
+
+def square(x):
+    return x ** 2
+
+squared_numbers = map(square, numbers)
+
+Accessing the Results:
+squared_numbers = list(map(square, numbers))
+print(squared_numbers)  # Output: [1, 4, 9, 16, 25]
+
+#################
+
+map() applies a function to each item in an iterable and returns an iterator of the results.
+function: The function to apply can be a defined function or a lambda function.
+Iterable: Any iterable object (list, tuple, etc.) can be used as input.
