@@ -1,4 +1,5 @@
-#takes a plain passord and  hash it
+#takes a plain passord and hash it and give hashed.txt file 
+#validation .. compares the hashed
 
 import hashlib
 name = input("Enter your name: ")
@@ -24,8 +25,16 @@ def validation(input_pass):
         return "Password didn't matched."
 
 
+def check_strength(user_pass):
+    length_pass = len(user_pass)
+    if length_pass < 8:
+        return f"Weak! Password is less than 8.\nYour password length: {length_pass}."
+    else:
+        return f"Strong! Your password length is {length_pass}."
+
+
 while True:
-    choice = input("Enter 'E' to encrypt and 'V' to check and 'Q' to exit : ").upper()
+    choice = input("Options:\n'E' to encrypt \n'V' to check \n'S' to check strength \n'Q' to exit : ").upper()
 
     if choice == 'E':
         user_pass = input("Enter Password: ")
@@ -36,6 +45,11 @@ while True:
         dec_pass = input("Enter the password you want to check: ")
         dec = validation(dec_pass)
         print(dec)
+
+    elif choice == 'S':
+        input_pass = input("Enter your password: ")
+        input_password = check_strength(input_pass)
+        print(input_password)
 
     elif choice == 'Q':
         print("Exiting.... Thank you!")
