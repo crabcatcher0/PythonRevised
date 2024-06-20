@@ -9,6 +9,7 @@ s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 #os will bind this for us
 
 host = '127.0.0.1'
+
 while True:
     s.connect((host, port))
     message = input("Type Your Message: ")

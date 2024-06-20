@@ -2,6 +2,8 @@
 #validation .. compares the hashed
 
 import hashlib
+import os
+
 name = input("Enter your name: ")
 print(f"Welcome to Password Manager.({name})")
 
@@ -11,7 +13,8 @@ def encrypt(password):
 
     with open("hashed.txt", "w") as file:
         file.write(data)
-    return "Hashed completed check the 'hashed.txt' file."
+    file_path = os.path.realpath("hashed.txt")
+    return f"Hashed completed check the 'hashed.txt' file in {file_path}"
 
 
 def validation(input_pass):
@@ -23,18 +26,23 @@ def validation(input_pass):
         return "Password matched."
     else:
         return "Password didn't matched."
+    
 
 
 def check_strength(user_pass):
     length_pass = len(user_pass)
+    
     if length_pass < 8:
-        return f"Weak! Password is less than 8.\nYour password length: {length_pass}."
+        return f"Weak! Password is less than 8.\nYour password length: {length_pass}.\nRecommendation:\nPassword length should be more than 8 character.\nMust contain one alphabate\nMust contain one special character."
     else:
         return f"Strong! Your password length is {length_pass}."
+        
+    
+    
 
 
 while True:
-    choice = input("Options:\n'E' to encrypt \n'V' to check \n'S' to check strength \n'Q' to exit : ").upper()
+    choice = input("***Options:***\n'E' to encrypt \n'V' to check \n'S' to check strength \n'Q' to exit : ").upper()
 
     if choice == 'E':
         user_pass = input("Enter Password: ")
